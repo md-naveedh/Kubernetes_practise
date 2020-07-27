@@ -10,6 +10,11 @@ spec:
     - 
       image: postgres:9.4
       name: postgres
+      env:
+      - name: POSTGRES_USER
+        value: admin
+      - name: POSTGRES_PASSWORD
+        value: admin
       ports: 
         - 
           containerPort: 5432
